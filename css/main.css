@@ -1,6 +1,187 @@
+/* 
+========
+Variables
+========
+*/
+:root {
+  /* ## Colors */
+  /* ### Primary */
+  --primary-color-orange: hsl(25, 97%, 53%);
+  /* ### Neutral */
+  --neutral-color-white: hsl(0, 0%, 100%);
+  --neutral-color-light-grey: hsl(217, 12%, 63%);
+  --neutral-color-medium-grey: hsl(216, 12%, 54%);
+  --neutral-color-dark-blue: hsl(213, 19%, 18%);
+  --neutral-color-dark-blue-circle: hsl(213, 19%, 18%); /* I created this shade */
+  --neutral-color-very-dark-blue: hsl(216, 12%, 8%);
+  --neutral-color-dark-blue: hsl(213deg 22.51% 16.07%);
+  /* Fonts */
+  --fweight-normal: font-weight: 400;
+  --fweight-bold: font-weight: 700;
+  --fffamily: "Overpass", sans-serif;
+}
+
+/* 
+=============
+General Rules
+=============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--fffamily);
+  font-size: 15px;
+  background-color: var(--neutral-color-very-dark-blue);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* 
+=============
+ container
+=============
+*/
+.container-wrapper,
+.container-thank-you {
+  background-color: var(--neutral-color-dark-blue);
+  padding: 1.5rem;
+  border-radius: 0.62rem;
+  max-width: 400px;
+}
+
+.container-wrapper img {
+  background-color: var(--neutral-color-dark-blue-circle);
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+
+.container-wrapper h1 {
+  color: #fff;
+  margin: 2rem 0 1rem;
+}
+
+.container-wrapper p {
+  color: var(--neutral-color-light-grey);
+  margin-bottom: 1rem;
+}
+
+.container-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.container-wrapper ul li button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--neutral-color-dark-blue-circle);
+  color: var(--neutral-color-medium-grey);
+  padding-top: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container-wrapper ul li button:hover {
+  background-color: var(--primary-color-orange);
+}
+
+.container-wrapper ul li button:focus {
+  background-color: var(--neutral-color-light-grey);
+}
+
+.btn-submit {
+  background-color: var(--primary-color-orange);
+  width: 100%;
+  padding: 0.4rem 0 0.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+  color: var(--primary-color-orange);
+}
+
+.container-thank-you {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.container-thank-you .gray {
+  background-color: var(--neutral-color-dark-blue-circle);
+  color: var(--primary-color-orange);
+  border-radius: 30px;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.container-thank-you h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.container-thank-you p {
+  color: var(--neutral-color-medium-grey);
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .attribution a {

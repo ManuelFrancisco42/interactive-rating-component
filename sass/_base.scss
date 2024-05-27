@@ -1,0 +1,69 @@
+/* 
+========
+Variables
+========
+*/
+:root {
+    /* ## Colors */
+
+/* ### Primary */
+--primary-color-orange: hsl(25, 97%, 53%);
+
+/* ### Neutral */
+--neutral-color-white: hsl(0, 0%, 100%);
+--neutral-color-light-grey: hsl(217, 12%, 63%);
+--neutral-color-medium-grey: hsl(216, 12%, 54%);
+--neutral-color-dark-blue: hsl(213, 19%, 18%);
+--neutral-color-dark-blue-circle: hsl(213, 19%, 18%); /* I created this shade */
+--neutral-color-very-dark-blue: hsl(216, 12%, 8%);
+--neutral-color-dark-blue: hsl(213deg 22.51% 16.07%);
+/* Fonts */
+--fweight-normal:   font-weight: 400;
+--fweight-bold:   font-weight: 700; 
+--fffamily: 'Overpass', sans-serif;
+}
+
+/* 
+=============
+General Rules
+=============
+*/
+*, 
+::after, 
+::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--fffamily);
+    font-size: 15px;
+    background-color: var(--neutral-color-very-dark-blue);
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    font-family: inherit;
+}
